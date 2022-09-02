@@ -7,16 +7,16 @@ app.use(cors());
 app.use(express.json());
 
 
-//create a video
-app.post("/videos", async (req, res) => {
+//create a user
+app.post("/users", async (req, res) => {
   try {
-    const { year, month, day, person, videolink, description, others, holiday } = req.body;
-    const newVideo = await pool.query(
-      "INSERT INTO video (year) VALUES($1) RETURNING *",
-      [year]
+    const { firstName, email, password } = req.body;
+    const newUser = await pool.query(
+      "INSERT INTO users (firstName, email, password) VALUES($1, $2, $3) RETURNING *",
+      [firstName, email, password]
     );
 
-    res.json(newVideo.rows[0]);
+    res.json(nenwUsers.rows[0]);
   } catch (err) {
     console.error(err.message);
   }
