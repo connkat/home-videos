@@ -1,6 +1,4 @@
-import { Fragment, useState, useEffect } from "react";
-
-import EditVideo from "./EditVideo";
+import { useState, useEffect } from "react";
 
 function ListVideos() {
   const [videos, setVideos] = useState([]);
@@ -14,24 +12,14 @@ function ListVideos() {
     }
   };
 
-  const deleteVideo = async (id) => {
-    try {
-      const res = await fetch(`http://localhost:4000/videos/${id}`, {
-        method: "DELETE",
-      });
-      const data = await res.json();
-      setVideos(videos.filter(video => video.video_id !== id));
-    } catch (err) {
-      console.error(err.message);
-    }
-  };
-
   useEffect(() => {
     getVideos();
   });
   return (
-    <Fragment>
-    </Fragment>
+    <div className="list-videos">
+      <h2>Connolly Family Videos</h2>
+      {videos}
+    </div>
   );
 }
 
