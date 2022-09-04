@@ -1,12 +1,14 @@
+import TextField from "./TextField"
+
 
 function FilterBar() {
   return (
     <div className="filter-bar">
-        <p>search term</p>
+        {/* <TextField /> */}
         <p>year</p>
         <p>month</p>
         <p>holiday</p>
-        <p>main</p>
+        <p>family Member</p>
         <p>others</p>
     </div>
   );
