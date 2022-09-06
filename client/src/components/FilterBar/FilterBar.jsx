@@ -4,7 +4,7 @@ import TextField from "./TextField"
 function FilterBar() {
   return (
     <div className="filter-bar">
-        {/* <TextField /> */}
+        <TextField label="search"/>
         <p>year</p>
         <p>month</p>
         <p>holiday</p>
