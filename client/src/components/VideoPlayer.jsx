@@ -1,5 +1,3 @@
-import PropTypes from "prop-types";
-
 const VideoPlayer = ({ embedId }) => (
   <div className="video-responsive">
     <iframe

@@ -7,7 +7,7 @@ function VideoCard() {
         <p>holiday</p>
         <p>family member name</p>
         <p>others</p>
-        <VideoPlayer />
+        <VideoPlayer embedId=""/>
     </div>
   );
 }
