@@ -17,7 +17,6 @@ function ListVideos() {
   });
   return (
     <div className="list-videos">
-      <h2>Connolly Family Videos</h2>
       {videos}
     </div>
   );

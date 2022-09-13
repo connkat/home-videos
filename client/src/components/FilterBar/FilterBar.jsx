@@ -1,9 +1,10 @@
 import TextField from "./TextField"
 
+import './filterbar.css';
 
 function FilterBar() {
   return (
-    <div className="filter-bar">
+    <div className="filterbar">
         <TextField label="search"/>
         <p>year</p>
         <p>month</p>
