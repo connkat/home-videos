@@ -1,5 +1,6 @@
 import { useState } from "react";
 import TextField from "./TextField";
+import Dropdown from "./Dropdown";
 
 import "./filterbar.css";
 
@@ -24,7 +25,7 @@ function FilterBar() {
     <div className="filterbar">
       <form>
         <TextField label="search" />
-        <p>year</p>
+        <Dropdown label="year" />
         <p>month</p>
         <p>holiday</p>
         <p>family Member</p>
