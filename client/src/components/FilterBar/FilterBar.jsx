@@ -24,7 +24,7 @@ function FilterBar() {
   return (
     <div className="filterbar">
       <form>
-        <TextField label="search" />
+        <TextField id="field" label="search"  />
         <Dropdown label="year" />
         <p>month</p>
         <p>holiday</p>
