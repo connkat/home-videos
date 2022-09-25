@@ -5,7 +5,7 @@ import Dropdown from "./Dropdown";
 import "./filterbar.css";
 
 function FilterBar() {
-  const [searchField, setSearchField] = useState("");
+  const [searchField, setSearchField] = useState("search");
   const onSubmitForm = async (e) => {
     e.preventDefault();
     try {
