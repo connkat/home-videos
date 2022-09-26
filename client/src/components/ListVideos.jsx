@@ -17,6 +17,7 @@ function ListVideos() {
   });
   return (
     <div className="list-videos">
+      Videos:
       {videos}
     </div>
   );
