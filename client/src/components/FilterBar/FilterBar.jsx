@@ -9,7 +9,7 @@ function FilterBar() {
   const onSubmitForm = async (e) => {
     e.preventDefault();
     try {
-      const body = { field };
+      const body = { searchField };
       const res = await fetch("http://localhost:4000/videos", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
