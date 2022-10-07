@@ -9,14 +9,12 @@ import "./App.css";
 
 function App() {
   return (
-    <Fragment>
-      <div className="import-videos">
+      <div>
         <Header />
         <FilterBar />
         <VideoCard />
         <ListVideos />
       </div>
-    </Fragment>
   );
 }
 
