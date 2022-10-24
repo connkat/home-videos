@@ -46,22 +46,6 @@ app.get("/videos/:id", async (req, res) => {
   }
 });
 
-//update a video
-app.put("/videos/:id", async (req, res) => {
-  try {
-    const { id } = req.params;
-    const { description } = req.body;
-    const updateVideo = await pool.query(
-      "UPDATE video SET description = $1 WHERE video_id = $2",
-      [description, id]
-    );
-
-    res.json("Video was updated!");
-  } catch (err) {
-    console.error(err.message);
-  }
-});
-
 //delete a video
 app.delete("/videos/:id", async (req, res) => {
   try {
