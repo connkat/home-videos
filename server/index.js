@@ -46,19 +46,6 @@ app.get("/videos/:id", async (req, res) => {
   }
 });
 
-//delete a video
-app.delete("/videos/:id", async (req, res) => {
-  try {
-    const { id } = req.params;
-    const deleteVideo = await pool.query("DELETE FROM videos WHERE video_id = $1", [
-      id
-    ]);
-    res.json("Video was deleted!");
-  } catch (err) {
-    console.log(err.message);
-  }
-});
-
 app.listen(4000, () => {
   console.log("server has started on port 4000");
 });
