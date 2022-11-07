@@ -3,6 +3,8 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 
 export default function BasicTextFields(props) {
+const {label} = props
+
   return (
     <Box
       component="form"
@@ -12,7 +14,7 @@ export default function BasicTextFields(props) {
       noValidate
       autoComplete="off"
     >
-      <TextField id="outlined-basic" label={props.label} variant="outlined" />
+      <TextField id="outlined-basic" label={label} variant="outlined" />
     </Box>
   );
 }
