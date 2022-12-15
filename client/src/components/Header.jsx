@@ -1,11 +1,15 @@
- import './header.css'
- 
+// import Login from "./Auth/Login";
+// import Logout from "./Logout";
+
+import "./header.css";
+
 function Header() {
   return (
     <div className="header">
       <h1>Connolly Family Home Videos</h1>
-        <p>sign in</p>
-        <p>videos</p>
+      {/* <Login />
+      <Logout /> */}
+      <p>videos</p>
     </div>
   );
 }
