@@ -3,4 +3,4 @@ A catalogue of family videos from the 80s and 90s.
 
 Made with React, Node, PSQL with videos hosted on youtube
 
-V 2.0 out soon
+V 2.0 release in spring 2023
